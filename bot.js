@@ -1,9 +1,9 @@
-const Discord = require("discord.js");
+const Discord = require("Discord.js");
 const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-//          client.user.setActivity("You.",{type: 'WATCHING'});
+          client.user.setActivity("You.",{type: 'WATCHING'});
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
