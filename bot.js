@@ -20,7 +20,7 @@ client.on("message", message => {
   message.channel.send(`\`${message.guild.members.filter( m => m.presence.status !== 'all').size}\`:mailbox:  عدد المستلمين `);
   message.delete();
   };
-  });
+});
 
 
 //bc online
@@ -40,9 +40,7 @@ client.on("message", message => {
    message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` :mailbox:  عدد المستلمين `); 
    message.delete(); 
   };     
-  });
-
-
+});
 
 
 
