@@ -12,6 +12,16 @@ client.user.setActivity("You.",{type: 'LISTENING'});
 
 
 
+
+
+client.on('guildMemberAdd', (member) => {
+member.addRole(member.guild.roles.find('name', '› Ads.'));
+});
+
+
+
+
+
 client.on('message', message => {
      if (message.content === "باي") {
 message.channel.sendMessage("" + " :rose:باي");
